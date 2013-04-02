@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+	<TableLayout 
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+	    <TableRow>
+	        
+    <Button
+        android:id="@+id/start_playing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button03"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/stop_playing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button02"
+        android:textSize="24sp" />
+       	    </TableRow>
+	</TableLayout> 
+
+
+	<TableLayout 
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+	    <TableRow>
+     <Button
+        android:id="@+id/scan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button11" />
+    
+    <Button
+        android:id="@+id/start_playing_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button13" />
+        
+    <Button
+        android:id="@+id/next_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button14" />
+    <Button
+        android:id="@+id/stop_playing_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button12" />
+    <Button
+        android:id="@+id/pause_playing_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button15" />
+        <Button
+        android:id="@+id/res_playing_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button16" />
+
+	    </TableRow>
+	</TableLayout>
+
+	<TableLayout 
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:collapseColumns="0,1,2,3">
+	    	    <TableRow>
+
+
+<!--  	        
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tips"
+        android:textColor="#ff00ff" />
+
+    <EditText
+        android:id="@+id/shake_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/reset_shake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button04" />
+-->
+	<EditText 
+	    android:id="@+id/editText1" android:layout_width="fill_parent"
+        android:text="@string/textToSpeak1" android:layout_height="wrap_content"
+        android:textSize="20sp"></EditText>
+	<EditText 
+	    android:id="@+id/editText2" android:layout_width="fill_parent"
+        android:text="@string/textToSpeak2" android:layout_height="wrap_content"
+        android:textSize="20sp"></EditText>
+	<EditText 
+	    android:id="@+id/editText3" android:layout_width="fill_parent"
+        android:text="@string/textToSpeak3" android:layout_height="wrap_content"
+        android:textSize="20sp"></EditText>
+	<EditText 
+	    android:id="@+id/editText4" android:layout_width="fill_parent"
+        android:text="@string/textToSpeak4" android:layout_height="wrap_content"
+        android:textSize="20sp"></EditText>
+	    </TableRow>
+	</TableLayout>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <Button android:text="朗读" android:id="@+id/button_play" android:textSize="24sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    <Button android:text="停止" android:id="@+id/button_stop" android:textSize="24sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+</LinearLayout>
+
+
+
+</LinearLayout>

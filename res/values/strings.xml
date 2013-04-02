@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="textPrompt">请输入需要朗读的信息：</string>
+    <string name="textToSpeak1">陈晗先生，油门给的很猛啊，我有点受不鸟那</string>
+    <string name="textToSpeak2">陈晗先生，前方二十五米处有二逼车辆出现，请注意避让</string>
+    <string name="textToSpeak3">路况比较颠簸，请扶稳坐好，没票的乘客请买票</string>
+    <string name="textToSpeak4">今天天气不错嘛，需要去happy一下么</string>
+    <string name="app_name">SmartCar_2.0</string>
+    <string name="button02">STOP Engine</string>
+    <string name="button03">SART Engine</string>
+    <string name="tips">请输入加速度检测数值[100-2000]</string>
+    <string name="button04">重置</string>
+    
+    <string name="button11">SCAN</string>
+    <string name="button12">STOP</string>
+    <string name="button13">SART</string>
+    <string name="button14">NEXT</string>
+    <string name="button15">PAU</string>
+    <string name="button16">RES</string>
+</resources>

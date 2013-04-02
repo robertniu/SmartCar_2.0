@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="snda.in.ttsdemo"
+      android:versionCode="2"
+      android:versionName="2.0">
+    <uses-sdk android:minSdkVersion="10" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".SmartCar_Activity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="snda.in.ttsdemo.BroadCastReceiver">
+            <intent-filter>
+                <action android:name="com.snda.message.installok" />
+                <action android:name="com.snda.message.installfail" />
+            </intent-filter>
+        </receiver>
+          
+        <service android:name="Smartcar_MusicService"> 
+		<intent-filter> 
+		<action android:name="snda.in.ttsdemo.music" /> 
+		<category android:name="android.intent.category.DEFAULT" /> 
+		</intent-filter> 
+		</service> 
+		
+    </application>
+</manifest>
