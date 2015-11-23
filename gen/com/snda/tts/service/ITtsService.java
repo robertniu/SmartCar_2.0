@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\security\\TalkingCar_Proj\\workspace\\SmartCar_2.0\\src\\com\\snda\\tts\\service\\ITtsService.aidl
+ * Original file: E:\\github\\SmartCar_2.0\\src\\com\\snda\\tts\\service\\ITtsService.aidl
  */
 package com.snda.tts.service;
 public interface ITtsService extends android.os.IInterface
@@ -23,13 +23,13 @@ public static com.snda.tts.service.ITtsService asInterface(android.os.IBinder ob
 if ((obj==null)) {
 return null;
 }
-android.os.IInterface iin = (android.os.IInterface)obj.queryLocalInterface(DESCRIPTOR);
+android.os.IInterface iin = obj.queryLocalInterface(DESCRIPTOR);
 if (((iin!=null)&&(iin instanceof com.snda.tts.service.ITtsService))) {
 return ((com.snda.tts.service.ITtsService)iin);
 }
 return new com.snda.tts.service.ITtsService.Stub.Proxy(obj);
 }
-public android.os.IBinder asBinder()
+@Override public android.os.IBinder asBinder()
 {
 return this;
 }
@@ -95,7 +95,7 @@ Proxy(android.os.IBinder remote)
 {
 mRemote = remote;
 }
-public android.os.IBinder asBinder()
+@Override public android.os.IBinder asBinder()
 {
 return mRemote;
 }
@@ -113,7 +113,7 @@ return DESCRIPTOR;
          *     -1 if network connection failed.
          *     -2 if there is no permission for the calling application. Read online doc to apply permission.
          */
-public int activate() throws android.os.RemoteException
+@Override public int activate() throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
@@ -137,7 +137,7 @@ return _result;
          * @return
          *     0 if successful.
          */
-public int speak(com.snda.tts.service.TtsTask ttsTask) throws android.os.RemoteException
+@Override public int speak(com.snda.tts.service.TtsTask ttsTask) throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
@@ -168,7 +168,7 @@ return _result;
          * @return
          *     0 if successful.
          */
-public int stopCaller(java.lang.String caller) throws android.os.RemoteException
+@Override public int stopCaller(java.lang.String caller) throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
@@ -193,7 +193,7 @@ return _result;
          * @return
          *     0 if successful.
          */
-public int stopCallerAll(java.lang.String caller) throws android.os.RemoteException
+@Override public int stopCallerAll(java.lang.String caller) throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
